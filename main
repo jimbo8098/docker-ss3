@@ -1,0 +1,14 @@
+#!/bin/bash
+
+set -o xtrace
+
+source ss3functions.sh
+require_steamcmd
+
+if [ -f "${HOME}/steam/steamcmd.sh" ]; then 
+  require_ss3
+fi
+
+if [ -f "${HOME}/ss3server/Bin/SamHD_DedicatedServer.exe" ]; then
+  launch
+fi
